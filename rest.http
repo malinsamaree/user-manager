@@ -1,0 +1,40 @@
+POST http://localhost:8000/user/logoff
+Content-Type: application/json
+
+{
+  "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyZTVhNjM1M2M0OTZkZmVjYTAzMzM4MiIsImlhdCI6MTY1OTczNTc3MCwiZXhwIjoxNjYyMzI3NzcwfQ.z_VNoDh10xS1B74utLfCDW5UnQbIPCZ0Q_2fKMtgUC8"
+}
+
+###
+GET http://localhost:8000/user/verify
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyZTVhNjM1M2M0OTZkZmVjYTAzMzM4MiIsImlhdCI6MTY1OTgxNDc0NywiZXhwIjoxNjU5ODE4MzQ3fQ.cYn79BkgcfBjtnrAnY0VuIko3ZkJK8Am5CgPIZu8xx0
+Accept: application/json
+
+###
+GET http://localhost:8000/user/refresh
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyZTVhNjM1M2M0OTZkZmVjYTAzMzM4MiIsImlhdCI6MTY1OTgxMTUzMSwiZXhwIjoxNjYyNDAzNTMxfQ.Pi9kdL_dLqSXqQnDv4-RxvoiNcmhYiWzr5aftVmMf_w
+Accept: application/json
+
+###
+POST http://localhost:8000/user/login
+Content-Type: application/json
+
+{
+  "email": "emaillllmalin@email.com",
+  "password": "abc123@D"
+}
+
+###
+POST http://localhost:8000/user/register
+Content-Type: application/json
+
+{
+  "email": "emaillllmalin@email.com",
+  "password": "abc123@D"
+}
+
+###
+GET http://localhost:8000/user
+Accept: application/json
+
+###
